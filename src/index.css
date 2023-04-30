@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paginationBttns {
+    @apply w-[80%] h-[40px] flex mx-auto justify-center  my-[2rem];
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.paginationBttns a{
+    @apply p-[10px] m-[8px] rounded-md border border-gray-200 cursor-pointer ;
+}
+
+.paginationBttns a:hover {
+    @apply bg-gray-300
+}
+
+.paginationActiveButton a{
+    @apply bg-gray-300;
+
 }
